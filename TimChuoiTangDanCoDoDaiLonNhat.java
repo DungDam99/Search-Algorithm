@@ -9,7 +9,7 @@ public class TimChuoiTangDanCoDoDaiLonNhat {
         ArrayList<Character> temp = new ArrayList<>();
         temp.add(arr[0]);
         for (int i = 1; i < arr.length; i++) {
-            if(arr[i - 1] < arr[i]) temp.add(arr[i]);
+            if(temp.get(temp.size() - 1) < arr[i]) temp.add(arr[i]);
         }
 
         return new String(temp.toString());
